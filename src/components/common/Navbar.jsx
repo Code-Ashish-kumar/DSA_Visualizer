@@ -37,7 +37,7 @@ const Navbar = () => {
                     className='flex items-center space-x-2'
                     to='/'
                 >
-                    <FaBrain className="text-3xl text-blue-400" />
+                    <FaBrain className="text-3xl text-[#18CCFF]" />
                     <HighlightedText text="DSA-VISUALIZER" />
                 </Link>
 
