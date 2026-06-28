@@ -4,6 +4,9 @@ import Navbar from './components/common/Navbar'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import About from './pages/About'
+import Algorithms from './pages/Algorithms'
+import Sorting from './pages/Sorting'
+import Searching from './pages/Searching'
 
 function App() {
   return (
@@ -14,6 +17,12 @@ function App() {
         <Route path='/' element={<Home />} />
 
         <Route path='/about' element={<About />} />
+
+        <Route path='/algorithms' element={<Algorithms />} />
+
+        <Route path='/algorithms/sorting'  element={<Sorting />} />
+
+        <Route path='/algorithms/search'   element={<Searching />} />
       </Routes>
     </>
   )

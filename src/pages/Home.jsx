@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import algo from "../data/algocategory"
 import AlgorithmCard from "../components/core/HomePage/AlgoCard"
 import Footer from "../components/common/Footer"
@@ -18,7 +19,7 @@ export default function Home() {
         </div>
 
         {/* Heading */}
-        <h1 className="text-center text-7xl font-extrabold leading-none">
+        <h1 className="text-center text-5xl md:text-7xl font-extrabold leading-none">
             Master
             <br />
 
@@ -31,20 +32,20 @@ export default function Home() {
         </h1>
 
         {/* Description */}
-        <p className="mt-8 max-w-2xl text-center text-xl text-gray-500">
+        <p className="mt-8 max-w-2xl text-center text-sm md:text-xl text-gray-500">
             Visualize, understand, and master complex algorithms through
             interactive step-by-step animations and comprehensive explanations.
         </p>
 
         {/* Buttons */}
-        <div className="mt-10 flex gap-4">
-            <button className="rounded-xl bg-cyan-500 px-8 py-4 text-white shadow-lg hover:bg-cyan-600">
+        <div className="mt-10 flex gap-4 text-sm md:text-lg">
+            <Link to="/algorithms" className="rounded-xl bg-cyan-500 px-4 py-2 md:px-8 md:py-4 text-white shadow-md hover:bg-cyan-600">
             ▶ Start Visualizing
-            </button>
+            </Link>
 
-            <button className="rounded-xl border bg-white px-8 py-4 hover:bg-gray-100">
+            <Link to="/about" className="rounded-xl bg-white px-4 py-2 md:px-8 md:py-4 shadow-sm hover:bg-gray-100">
             Learn More →
-            </button>
+            </Link>
         </div>
 
         {/* Chips */}
@@ -58,7 +59,7 @@ export default function Home() {
             ].map((item) => (
             <span
                 key={item}
-                className="rounded-full bg-white px-4 py-2 text-sm text-gray-500 shadow"
+                className="rounded-full bg-white px-4 py-2 text-xs md:text-sm text-gray-500 shadow"
             >
                 {item}
             </span>
@@ -83,16 +84,16 @@ export default function Home() {
 
         {/* Features Section */}
         <section className="my-20 flex flex-col items-center gap-6">
-            <h2 className="text-4xl font-extrabold text-shadow-xs uppercase">
+            <h2 className="text-2xl md:text-4xl font-extrabold text-shadow-xs uppercase">
                 Explore Algorithm Categories
             </h2>
 
-            <p className="max-w-4xl text-center text-gray-500 mb-10">
+            <p className="max-w-4xl text-sm md:text-lg text-center text-gray-500 mb-10">
                 Choose a category to dive into interactive visualizations and master the concepts with ease.
                 Each section offers a variety of algorithms, from basic to advanced, all designed to enhance your learning experience.
             </p>
 
-            <div className="max-w-10/12 grid gap-8 md:grid-cols-2">
+            <div className="max-w-11/12 grid gap-8 md:grid-cols-2 lg:max-w-10/12">
                 {algo.map((item, index) => (
                     <AlgorithmCard key={index} algo={item} />
                 ))}
