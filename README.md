@@ -165,22 +165,6 @@ The page component ticks through frames on a `setInterval` (controlled by the sp
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! To add a new algorithm:
-
-1. Add a frame-generator function in `src/utils/sortingAlgorithms.js` or `searchingAlgorithms.js`
-2. Register it in the `ALGORITHMS` / `SEARCH_ALGORITHMS` export object with name, complexity, description, and code string
-3. The UI picks it up automatically — no other changes needed
-
----
-
-## 📄 License
-
-This project is open source and free to use for learning purposes.
-
----
-
 <div align="center">
   Built with ❤️ by <a href="https://github.com/Code-Ashish-kumar">Ashish Kumar</a>
 </div>
